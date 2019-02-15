@@ -13077,9 +13077,10 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p>Given a qualitative analisys of the pros and cons of different models to predict if a person makes mora of $50,000 or not, we choose to preselect three of them: Adaboost with decision trees, Support Vector Macines and Gaussian Naive Bayes.</p>
+<p>Given a qualitative analisys of the pros and cons of different models to predict if a person makes more than $50,000 or not, we choose to preselect three of them: Adaboost with decision trees, Support Vector Macines and Gaussian Naive Bayes.</p>
 <p>The Support Vector Machine model showed the best results both in terms of precision(&gt;0.8) and Fscore(around 0.68), a little bit behind comes our Adaboost with decision trees with precision &gt;0.8 and Fscore around 0.65. There is a large difference in predicting and training time though. The SVC takes a time that is two order of magnitudes higher than the Adaboost with decision trees.</p>
-<p>That is why I would choose to use Adaboost, which might have slightly less Fscore, but significantly less timming costs. The Gaussian Naive Bayes was not considered in te final selection because it shows precision and fscore significantly lower than the oter two models (0.6 and 0.4 respectively), it is importance to notice though that this algorithm showed the fastest trainning and predicting times.**</p>
+<p>In addition, we have to put on the table some evidence we know from general knowledge: First, trees perform well with categorical variables. We tested that with our results, but we can also be quiet confortable with the fact that many people have had good results with trees for such problems. The second fact is that the easy structure of the tree will help me to explain the results to Charity ML, which is something very important for the success of this project. The support of Adaboost made this model at the same time very accurate and easy to understand.</p>
+<p>That is why I would choose to use Adaboost, which might have slightly less Fscore, but significantly less timming costs and other general perks. The Gaussian Naive Bayes was not considered in te final selection because it shows precision and fscore significantly lower than the oter two models (0.6 and 0.4 respectively), it is importance to notice though that this algorithm showed the fastest trainning and predicting times.**</p>
 
 </div>
 </div>
